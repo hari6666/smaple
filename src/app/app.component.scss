@@ -1,0 +1,17 @@
+.StartPage{
+    width: 400px;
+    height: 400;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.select{
+    margin-top: 10px;
+    border-radius: 0px;
+    background: #007066;
+    border-color: #007066;
+}
+#sel1,#sel2{
+    margin-bottom: 12px;
+}
