@@ -10,6 +10,7 @@ export class KishanListingComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    
   }
 
 }
