@@ -1,17 +1,55 @@
 .StartPage{
-    width: 400px;
+    max-width: 400px;
     height: 400;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    margin: auto;
+    border: 1px solid;
+    padding: 30px;
+    position: relative;
+    top: 165px;
+    background: rgba(255, 255, 255, 0.75);
+    box-shadow: 0 3px 8px #000;
+    select{
+        height: 45px;
+        border-radius: 0;
+    }
+    .btn-primary:not(:disabled):not(.disabled):active:focus{
+        box-shadow: none;
+    }
+    h1{
+        font-weight: 600;
+        font-size: 30px;
+        text-align: center
+    }
+    label{
+        font-weight: 600;
+        font-size: 18px;
+    }
+    .form-control:focus{
+        box-shadow: none;
+        outline: 0;
+        border-color:transparent; 
+    }
+    .select{
+        margin-top: 10px;
+        border-radius: 0px;
+        background: #007066;
+        border-color: #007066;
+        width: 100%;
+        font-weight: 600;
+        border-radius: 20px;
+        height: 40px;
+    }
+    .form-group{
+        margin: 0;
+    }
 }
-.select{
-    margin-top: 10px;
-    border-radius: 0px;
-    background: #007066;
-    border-color: #007066;
-}
+
 #sel1,#sel2{
     margin-bottom: 12px;
+}
+.bg{
+    background: url('https://mintoag.ca/wp-content/themes/minto/images/bg-main-fullscreen.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100vh;  
 }
