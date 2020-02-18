@@ -14,10 +14,10 @@ export class SplashService {
     }
 
     getProducts() {
-        return this.commonService.getObjects('/products')
+        return this.commonService.getObjects('/Products')
     };
     getLocations(){
-        return this.commonService.getObjects('/location')
+        return this.commonService.getObjects('/states')
     }
 
 

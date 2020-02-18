@@ -7,20 +7,14 @@
                 <label for="sel1">Product</label>
                 <select class="form-control" id="sel1" name="sellist1">
                     <option value="" disabled selected hidden>Select the product</option>
-                    <option>cotton</option>
-                    <option>paddy</option>
-                    <option>silk</option>
-                    <option>onion</option>
+                    <option *ngFor="let product of productsData; let i = index">{{product.productName}}</option>
                 </select>
                 <label for="sel1">Location</label>
                 <select class="form-control" id="sel2" name="sellist1">
                     <option value="" disabled selected hidden>Select the location</option>
-                    <option>Karnataka</option>
-                    <option>Delhi</option>
-                    <option>Kerala</option>
-                    <option>Andrapradesh</option>
+                    <option *ngFor="let states of statesData; let i = index">{{states.stateName}}</option>
                 </select>
-                <button type="submit" class="btn btn-primary select" [routerLink]="['/listing']">Search</button>
+                <button type="submit" class="btn btn-primary select" (click)="search()">Search</button>
             </div>
         </form>
     </div>

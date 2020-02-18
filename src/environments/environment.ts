@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  sourceUrl:""
+  sourceUrl:"http://10.10.0.182:81/api/Common"
 };
 
 /*

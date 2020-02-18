@@ -17,7 +17,7 @@ import { FooterComponent } from './shared/Components/footer/footer.component';
     SplashComponent,
     KishanListingComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

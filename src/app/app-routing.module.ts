@@ -6,7 +6,9 @@ import {SplashComponent} from './splash/splash.component'
 
 const routes: Routes = [
   { path: '', component: SplashComponent },
-  { path: 'listing', component: KishanListingComponent }
+  { path: 'listing', component: KishanListingComponent},
+  { path: '**', redirectTo: ''}
+
 
 ];
 

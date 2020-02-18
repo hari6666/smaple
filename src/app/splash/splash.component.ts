@@ -2,6 +2,8 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { SplashService } from './splashService'
 import { Subscription, Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
+import { Router } from '@angular/router';
+import { EmitterService } from '../Shared/EmitterService/emiiterService';
 
 
 
@@ -12,24 +14,33 @@ import { takeUntil } from 'rxjs/operators';
 })
 export class SplashComponent implements OnInit, OnDestroy {
 
-  constructor(private splashService: SplashService) { }
+  constructor(private splashService: SplashService, private router: Router, private emitterService: EmitterService) { }
   private unsubscribe: Subject<void> = new Subject();
 
+  productsData: any;
+  statesData: any
+
   ngOnInit(): void {
-    this.getProducts()
+    this.getProducts();
+    this.getLocations();
   }
 
 
   getProducts() {
     this.splashService.getProducts().pipe(takeUntil(this.unsubscribe)).subscribe((data: any) => {
-      console.log("hi")
+      this.productsData = data;
     })
   };
 
   getLocations() {
     this.splashService.getLocations().subscribe((data: any) => {
-      console.log("hi")
+      this.statesData = data;
     })
+  };
+
+  search() {
+    this.emitterService.headerShow.emit(true);
+    this.router.navigate(['/listing'])
   }
 
 
