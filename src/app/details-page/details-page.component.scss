@@ -1,0 +1,45 @@
+.details{
+    h3{
+        text-align: center;
+        padding: 10px;
+        font-weight: 600;
+        font-size: 30px;
+        text-align: center;
+    }
+    h4{
+        margin-bottom: 20px;
+        font-weight: 600;
+    }
+    h5 span{
+        font-weight: 600;
+    }
+    .list-group{
+        margin-bottom: 10px;
+    }
+    table{
+        border: 1px solid rgba(0, 0, 0, 0.125);
+        border-collapse: collapse;
+        margin-bottom: 15px;
+        box-shadow:0 0 5px rgba(0,0,0,0.8);
+
+      }
+      tr{
+        border: 1px solid rgba(0, 0, 0, 0.125);
+          }
+      th, td {
+        padding: 9px;
+        text-align: left;
+      }
+      .select{
+        margin: 10px 0;
+        border-radius: 5px;
+        background: #007066;
+        border-color: #007066;
+        width: 21%;
+        font-weight: 600;
+        height: 40px;
+    }
+    .card{
+        margin-bottom: 25px;
+    }
+}

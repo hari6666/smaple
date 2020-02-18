@@ -8,14 +8,17 @@ import { AppComponent } from './app.component';
 
 import { SplashComponent } from './splash/splash.component';
 import { KishanListingComponent } from './kishan-listing/kishan-listing.component';
-import { HeaderComponent } from './shared/Components/header/header.component';
+import { DetailsPageComponent } from './details-page/details-page.component';
+import { HeaderComponent } from './Shared/Components/header/header.component'
 import { FooterComponent } from './shared/Components/footer/footer.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     SplashComponent,
     KishanListingComponent,
+    DetailsPageComponent,
     HeaderComponent,
     FooterComponent,
   ],
