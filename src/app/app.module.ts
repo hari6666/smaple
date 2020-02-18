@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 
 import { SplashComponent } from './splash/splash.component';
 import { KishanListingComponent } from './kishan-listing/kishan-listing.component';
+import { DetailsPageComponent } from './details-page/details-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SplashComponent,
-    KishanListingComponent
+    KishanListingComponent,
+    DetailsPageComponent
   ],
   imports: [
     BrowserModule,
