@@ -1,47 +1,140 @@
-.details{
-    h3{
-        text-align: center;
-        padding: 10px;
-        font-weight: 600;
-        font-size: 30px;
-        text-align: center;
-    }
-    h4{
-        margin-bottom: 20px;
-        font-weight: 600;
-    }
-    h5 span{
-        font-weight: 600;
-    }
-    .list-group{
-        margin-bottom: 10px;
-    }
-    table{
-        border: 1px solid rgba(0, 0, 0, 0.125);
-        border-collapse: collapse;
-        margin-bottom: 15px;
-        box-shadow:0 0 5px rgba(0,0,0,0.8);
+.details {
+  h3 {
+    text-align: center;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+  }
 
-      }
-      tr{
-        border: 1px solid rgba(0, 0, 0, 0.125);
-          }
-      th, td {
-        padding: 9px;
-        text-align: left;
-      }
-      .select{
-        margin: 10px 0;
-        border-radius: 5px;
-        background: #007066;
-        border-color: #007066;
-        font-weight: 600;
-        height: 40px;
+  h4 {
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+
+  h5 span {
+    font-weight: 600;
+  }
+
+  .list-group {
+    margin-bottom: 10px;
+  }
+
+  table {
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-collapse: collapse;
+    margin-bottom: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+
+  }
+
+  tr {
+    border: 1px solid rgba(0, 0, 0, 0.125);
+  }
+
+  th,
+  td {
+    padding: 9px;
+    text-align: left;
+  }
+
+  .select {
+    margin: 10px 0;
+    border-radius: 5px;
+    background: #007066;
+    border-color: #007066;
+    font-weight: 600;
+    height: 40px;
+  }
+
+  .card {
+    margin-bottom: 25px;
+  }
+
+  .textAlignRight {
+    text-align: right;
+  }
+}
+
+
+
+h3 {
+  text-align: center;
+  padding: 10px;
+  font-weight: 600;
+  font-size: 30px;
+  text-align: center;
+}
+
+.checked {
+  color: orange;
+}
+
+.card {
+  border: 0;
+  border-radius: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 30px;
+
+  .card-title {
+    font-weight: 600;
+  }
+}
+
+.effect6 {
+  position: relative;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.effect6:before,
+.effect6:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  top: 50%;
+  bottom: 0;
+  left: 10px;
+  right: 10px;
+  -moz-border-radius: 100px / 10px;
+  border-radius: 100px / 10px;
+}
+
+.effect6:after {
+  right: 10px;
+  left: auto;
+  -webkit-transform: skew(8deg) rotate(3deg);
+  -moz-transform: skew(8deg) rotate(3deg);
+  -ms-transform: skew(8deg) rotate(3deg);
+  -o-transform: skew(8deg) rotate(3deg);
+  transform: skew(8deg) rotate(3deg);
+}
+
+.cursor{
+    cursor: pointer;
+}
+.highlightborder{
+    border: 2px solid #007066;
+}
+.Cultivation{
+    height: 54px;
+    margin-bottom: 15px;
+    h4{
+        margin-top: 10px;
     }
-    .card{
-        margin-bottom: 25px;
-    }
-    .textAlignRight{
-        text-align: right;
-    }
+}
+.highlightEstimated{
+color: #0ac7b7;
+}
+.highlightOutcome{
+ color:#68dcd2
+}
+
+.highlightPropability{
+color:#01fde7
 }

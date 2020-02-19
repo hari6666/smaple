@@ -1,73 +1,111 @@
 <div class="container details">
-    <h3>Details</h3>
-    <div class="row">
-        <div class="col-6">
-            <div class="card">
-                    <div class="card-header">
-                        <h4>Farmers Details :</h4>
-                    </div>
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-6">
-                                <label>Farmers Name :</label>
-                            </div>
-                            <div class="col-6">
-                                <span>Supriya</span>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-6">
-                                <label>Location :</label>
-                            </div>
-                            <div class="col-6">
-                                <span>Bangalore</span>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-6">
-                                <label>Crop :</label>
-                            </div>
-                            <div class="col-6">
-                                <span>Wheat</span>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-6">
-                                <label>Quantity :</label>
-                            </div>
-                            <div class="col-6">
-                                <span>20 kg</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+  <h3>Details</h3>
+  <div class="row">
+    <div class="col-6">
+      <div class="card">
+        <div class="card-header">
+          <h4>Farmers Details :</h4>
         </div>
-        <div class="col-6 textAlignRight">
-            <button type="submit" class="btn btn-primary select"  data-toggle="modal" data-target="#exampleModal">Request Crop</button>
-
-
+        <div class="card-body">
+          <div class="row">
+            <div class="col-6">
+              <label>Farmers Name :</label>
+            </div>
+            <div class="col-6">
+              <span> {{detailsData.farmerName}}</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <label>Location :</label>
+            </div>
+            <div class="col-6">
+              <span>{{detailsData.stateName}}</span>
+            </div>
+          </div>
+         
+         
         </div>
+      </div>
     </div>
-    <div class="row">
-        <div class="col-6">
-            <h4>Present Cultivation :</h4>
-            <ul class="list-group">
-                <li class="list-group-item">First item</li>
-                <li class="list-group-item">Second item</li>
-                <li class="list-group-item">Third item</li>
-            </ul>
+    <div class="col-6 textAlignRight">
+      <button type="submit" class="btn btn-primary select" data-toggle="modal" data-target="#exampleModal">Request
+        Crop</button>
+
+
+    </div>
+  </div>
+
+  <div class="row" >
+    <div class="col-6 cursor Cultivation" (click)="presentCultivation()" [ngClass]="{'highlightborder': present}" >
+      <h4>Present Cultivation</h4>
+    </div>
+
+    <div class="col-6 cursor Cultivation" (click)="pastCultivation()" [ngClass]="{'highlightborder': past}">
+      <h4>Past Cultivation</h4>
+    </div>
+
+  </div>
+
+  <div class="row" *ngIf="present">
+    <div class="col-sm-3" *ngFor="let list of detailsData.presentCultivation">
+
+      <div class="card effect6">
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+          <p class="card-text"></p>
+          <p class="card-text">LocationName: {{list.locationName}}</p>
+          <p class="card-text">cultivation Arces: {{list.cultivationArces}}</p>
+          <p class="card-text">ProductName: {{list.productName}}</p>
+          <p class="card-text">Estimated Quantity: {{list.estimatedQuantity}}</p>
+          <label>Rating : </label>
+          <span class="fa fa-star " [ngClass]="{'checked': list.rating-1>=0}"> </span>
+          <span class="fa fa-star " [ngClass]="{'checked': list.rating-2>=0}"></span>
+          <span class="fa fa-star " [ngClass]="{'checked': list.rating-3>=0}"></span>
+          <span class="fa fa-star " [ngClass]="{'checked': list.rating-4>=0}"></span>
+          <span class="fa fa-star" [ngClass]="{'checked': list.rating-5>=0}"></span>
+
+          <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
         </div>
-        <div class="col-6">
-            <h4>Past Cultivation :</h4>
-            <ul class="list-group">
-                <li class="list-group-item">First item</li>
-                <li class="list-group-item">Second item</li>
-                <li class="list-group-item">Third item</li>
-            </ul>
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <div class="row" *ngIf="past">
+    <div class="col-sm-3" *ngFor="let list of detailsData.pastCultivation">
+
+      <div class="card effect6">
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+          <p class="card-text"></p>
+          <p class="card-text">LocationName: {{list.locationName}}</p>
+          <p class="card-text">cultivation Arces: {{list.cultivationArces}}</p>
+          <p class="card-text">ProductName: {{list.productName}}</p>
+          <p class="card-text highlightEstimated">Estimated Quantity: {{list.estimatedQuantity}}</p>
+          <p class="card-text highlightOutcome">Outcome Quantity: {{list.outComeQuantity}}</p>
+          <p class="card-text">cultivation Arces: {{list.cultivationArces}}</p>
+          <p class="card-text highlightPropability">CropSold Propability: {{list.cropSoldPropability}}</p>
+          <label>Rating : </label>
+          <span class="fa fa-star " [ngClass]="{'checked': list.rating-1>=0}"> </span>
+          <span class="fa fa-star " [ngClass]="{'checked': list.rating-2>=0}"></span>
+          <span class="fa fa-star " [ngClass]="{'checked': list.rating-3>=0}"></span>
+          <span class="fa fa-star " [ngClass]="{'checked': list.rating-4>=0}"></span>
+          <span class="fa fa-star" [ngClass]="{'checked': list.rating-5>=0}"></span>
+
+
+          <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
         </div>
-    </div>    
+      </div>
+    </div>
+  </div>
 </div>
 
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-<app-modal></app-modal>
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <app-modal></app-modal>
 </div>
