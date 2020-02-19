@@ -1,0 +1,79 @@
+.modal-header {
+    margin-bottom:0px;
+    margin-bottom: 0px;
+    background-color: #007066;
+    color: white;
+    font-weight: 600;
+}
+.modal-header .close {
+    color: #ffffff;
+    opacity: 1;
+    h5{
+        font-size: 25px;
+        font-weight: 600;
+    }
+}
+.product,.quantity{
+    font-size: 18px;
+    label{
+        margin: 0 20px 10px 0;
+        font-size: 20px;
+        font-weight: 600;
+        color: #000000a3;
+    }
+    input{
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+}
+.container {
+    padding: 16px;
+    background-color: white;
+  }
+  
+  /* Full-width input fields */
+  input[type=text], input[type=password],textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 0px 0 16px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  .Submit{
+    margin: 10px 0;
+    border-radius: 5px;
+    background: #007066;
+    border-color: #007066;
+    font-weight: 600;
+    height: 40px;
+  }
+  .container{
+      h4{
+        font-size: 28px;
+        font-weight: 600;
+        margin: 0;
+        color: #000000a3;
+      } 
+  } 
+ 
+  .registerbtn {
+    background-color: #007066;
+    color: white;
+    padding: 10px 20px;
+    font-size: 22px;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  .registerbtn:hover {
+    opacity: 1;
+  }

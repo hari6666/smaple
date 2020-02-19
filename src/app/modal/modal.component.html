@@ -4,30 +4,45 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <h5 class="modal-title" id="exampleModalLabel">Selected Crop</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
             <form>
-                <div class="form-group">
-                  <label for="exampleInputEmail1">Quantity </label>
-                  <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                <div class="product">
+                  <label>Product : </label>
+                  <span> Tomato</span>
                 </div>
-                <div class="form-group">
-                  <label for="exampleInputPassword1">Password</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                <div class="quantity">
+                  <label>Quantity : </label>
+                  <input type="number"/>
                 </div>
-                <div class="form-check">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-              </form>        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
+              </form>        
+          </div>
+          <form action="/action_page.php">
+            <div class="container">
+              <h4>Enter Your Details</h4>
+              <p><small>Please fill in this form to purchase crop</small></p>
+              <label for="FN"><b>First Name</b></label>
+              <input type="text" placeholder="Enter first name" name="FN" required>
+
+              <label for="LN"><b>Last Name</b></label>
+              <input type="text" placeholder="Enter last name" name="LN" required>
+
+              <label for="email"><b>Email</b></label>
+              <input type="text" placeholder="Enter Email" name="email" required>
+          
+              <label for="company"><b>Company</b></label>
+              <input type="text" placeholder="Enter company name" name="company" required>
+
+              <label for="address"><b>Address</b></label>
+              <textarea class="form-control" placeholder="Enter address" rows="5"></textarea>
+              <!-- <input type="textarea" placeholder="Enter address" name="address" required> -->
+              <p>By creating an account you agree to our <a target="_blank" href="http://generator.lorem-ipsum.info/terms-and-conditions">Terms & Privacy</a>.</p>
+              </div>
+              <button type="submit" class="btn registerbtn">Request Crop</button>
+          </form>
       </div>
     </div>
