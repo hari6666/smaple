@@ -12,7 +12,7 @@ import { SplashComponent } from './splash/splash.component';
 import { KishanListingComponent } from './kishan-listing/kishan-listing.component';
 import { DetailsPageComponent } from './details-page/details-page.component';
 import { HeaderComponent } from './Shared/Components/header/header.component'
-import { FooterComponent } from './shared/Components/footer/footer.component';
+import { FooterComponent } from './Shared/Components/footer/footer.component';
 import { ModalComponent } from './modal/modal.component';
 
 
