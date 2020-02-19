@@ -1,0 +1,451 @@
+{
+  "products": [
+
+    {
+      "productId": 1,
+      "productName": "Tomato"
+    },
+    {
+      "productId": 2,
+      "productName": "Onion"
+    },
+    {
+      "productId": 3,
+      "productName": "Paddy"
+    },
+    {
+      "productId": 4,
+      "productName": "Wheat"
+    }
+  ],
+  "states": [{
+    "stateId": 1,
+    "stateName": "ANDAMAN AND NICOBAR ISLANDS"
+  }, {
+    "stateId": 2,
+    "stateName": "ANDHRA PRADESH"
+  }, {
+    "stateId": 3,
+    "stateName": "ARUNACHAL PRADESH"
+  }, {
+    "stateId": 4,
+    "stateName": "ASSAM"
+  }, {
+    "stateId": 5,
+    "stateName": "BIHAR"
+  }, {
+    "stateId": 6,
+    "stateName": "CHATTISGARH"
+  }, {
+    "stateId": 7,
+    "stateName": "CHANDIGARH"
+  }, {
+    "stateId": 8,
+    "stateName": "DAMAN AND DIU"
+  }, {
+    "stateId": 9,
+    "stateName": "DELHI"
+  }, {
+    "stateId": 10,
+    "stateName": "DADRA AND NAGAR HAVELI"
+  }, {
+    "stateId": 11,
+    "stateName": "GOA"
+  }, {
+    "stateId": 12,
+    "stateName": "GUJARAT"
+  }, {
+    "stateId": 13,
+    "stateName": "HIMACHAL PRADESH"
+  }, {
+    "stateId": 14,
+    "stateName": "HARYANA"
+  }, {
+    "stateId": 15,
+    "stateName": "JAMMU AND KASHMIR"
+  }, {
+    "stateId": 16,
+    "stateName": "JHARKHAND"
+  }, {
+    "stateId": 17,
+    "stateName": "KERALA"
+  }, {
+    "stateId": 18,
+    "stateName": "KARNATAKA"
+  }, {
+    "stateId": 19,
+    "stateName": "LAKSHADWEEP"
+  }, {
+    "stateId": 20,
+    "stateName": "MEGHALAYA"
+  }, {
+    "stateId": 21,
+    "stateName": "MAHARASHTRA"
+  }, {
+    "stateId": 22,
+    "stateName": "MANIPUR"
+  }, {
+    "stateId": 23,
+    "stateName": "MADHYA PRADESH"
+  }, {
+    "stateId": 24,
+    "stateName": "MIZORAM"
+  }, {
+    "stateId": 25,
+    "stateName": "NAGALAND"
+  }, {
+    "stateId": 26,
+    "stateName": "ORISSA"
+  }, {
+    "stateId": 27,
+    "stateName": "PUNJAB"
+  }, {
+    "stateId": 28,
+    "stateName": "PONDICHERRY"
+  }, {
+    "stateId": 29,
+    "stateName": "RAJASTHAN"
+  }, {
+    "stateId": 30,
+    "stateName": "SIKKIM"
+  }, {
+    "stateId": 31,
+    "stateName": "TAMIL NADU"
+  }, {
+    "stateId": 32,
+    "stateName": "TRIPURA"
+  }, {
+    "stateId": 33,
+    "stateName": "UTTARAKHAND"
+  }, {
+    "stateId": 34,
+    "stateName": "UTTAR PRADESH"
+  }, {
+    "stateId": 35,
+    "stateName": "WEST BENGAL"
+  }, {
+    "stateId": 36,
+    "stateName": "TELANGANA"
+  }],
+
+  "farmerList":
+    [{
+      "farmerID": 1,
+      "farmerName": "Qasoleli",
+      "productId":2,
+      "stateId":1,
+      "stateName": "ANDAMAN AND NICOBAR ISLANDS",
+      "farmersPrice": 200.0,
+      "rating": 3
+    }, {
+      "farmerID": 2,
+      "farmerName": "Faecaelaeti",
+      "stateName": "ANDAMAN AND NICOBAR ISLANDS",
+      "productId":1,
+      "stateId":1,
+      "farmersPrice": 150.0,
+      "rating": 3
+    }, {
+      "farmerID": 3,
+      "farmerName": "Raqashedu",
+      "productId":2,
+      "stateId":2,
+      "stateName": "ANDAMAN AND NICOBAR ISLANDS",
+      "farmersPrice": 50.0,
+      "rating": 3
+    }, {
+      "farmerID": 4,
+      "farmerName": "Wegujaeko",
+      "stateName": "ANDAMAN AND NICOBAR ISLANDS",
+      "farmersPrice": 60.0,
+      "rating": 3
+    }, {
+      "farmerID": 5,
+      "farmerName": "Jolaejole",
+      "productId":1,
+      "stateId":1,
+      "stateName": "ANDAMAN AND NICOBAR ISLANDS",
+      "farmersPrice": 60.0,
+      "rating": 3
+    }, {
+      "farmerID": 6,
+      "farmerName": "Xaecaebaefa",
+      "stateName": "ANDAMAN AND NICOBAR ISLANDS",
+      "farmersPrice": 60.0,
+      "rating": 3
+    }, {
+      "farmerID": 7,
+      "farmerName": "Qymaekeqa",
+      "stateName": "ANDAMAN AND NICOBAR ISLANDS",
+      "farmersPrice": 100.0,
+      "productId":1,
+      "stateId":2,
+      "rating": 4
+    }, {
+      "farmerID": 8,
+      "farmerName": "Leqexosu",
+      "stateName": "ANDAMAN AND NICOBAR ISLANDS",
+      "farmersPrice": 100.0,
+      "rating": 3
+    }, {
+      "farmerID": 9,
+      "farmerName": "Raekaexaepu",
+      "productId":1,
+      "stateId":1,
+      "stateName": "ANDAMAN AND NICOBAR ISLANDS",
+      "farmersPrice": 100.0,
+      "rating": 3
+    }, {
+      "farmerID": 10,
+      "farmerName": "Kaevisofi",
+      "productId":1,
+      "stateId":2,
+      "stateName": "ANDAMAN AND NICOBAR ISLANDS",
+      "farmersPrice": 100.0,
+      "rating": 4
+    }, {
+      "farmerID": 11,
+      "farmerName": "Hatisowae",
+      "productId":1,
+      "stateId":1,
+      "stateName": "ANDAMAN AND NICOBAR ISLANDS",
+      "farmersPrice": 100.0,
+      "rating": 4
+    }, {
+      "farmerID": 12,
+      "farmerName": "Debafaemi",
+      "stateName": "ANDAMAN AND NICOBAR ISLANDS",
+      "farmersPrice": 100.0,
+      "rating": 3
+    }, {
+      "farmerID": 13,
+      "farmerName": "Gecaluvi",
+      "stateName": "ANDAMAN AND NICOBAR ISLANDS",
+      "farmersPrice": 100.0,
+      "rating": 3
+    }, {
+      "farmerID": 14,
+      "farmerName": "Faxyqely",
+      "stateName": "ANDAMAN AND NICOBAR ISLANDS",
+      "farmersPrice": 100.0,
+      "rating": 3
+    }, {
+      "farmerID": 15,
+      "farmerName": "Vudiloju",
+      "stateName": "ANDAMAN AND NICOBAR ISLANDS",
+      "farmersPrice": 100.0,
+      "rating": 3
+    }, {
+      "farmerID": 16,
+      "farmerName": "Rugoxaegy",
+      "stateName": "ANDAMAN AND NICOBAR ISLANDS",
+      "farmersPrice": 100.0,
+      "rating": 3
+    }, {
+      "farmerID": 17,
+      "farmerName": "Qazhaetokae",
+      "stateName": "ANDAMAN AND NICOBAR ISLANDS",
+      "farmersPrice": 100.0,
+      "rating": 3
+    }, {
+      "farmerID": 18,
+      "farmerName": "Kovypaela",
+      "stateName": "ANDAMAN AND NICOBAR ISLANDS",
+      "farmersPrice": 100.0,
+      "rating": 3
+    }, {
+      "farmerID": 19,
+      "farmerName": "Lalogudi",
+      "stateName": "ANDAMAN AND NICOBAR ISLANDS",
+      "farmersPrice": 100.0,
+      "rating": 3
+    }, {
+      "farmerID": 20,
+      "farmerName": "Kuroloqu",
+      "stateName": "ANDAMAN AND NICOBAR ISLANDS",
+      "farmersPrice": 100.0,
+      "rating": 3
+    }, {
+      "farmerID": 21,
+      "farmerName": "ZHigepify",
+      "stateName": "ANDAMAN AND NICOBAR ISLANDS",
+      "farmersPrice": 100.0,
+      "rating": 4
+    }, {
+      "farmerID": 22,
+      "farmerName": "Naesizhuvo",
+      "stateName": "ANDAMAN AND NICOBAR ISLANDS",
+      "farmersPrice": 100.0,
+      "rating": 3
+    }, {
+      "farmerID": 23,
+      "farmerName": "Mapushuvu",
+      "stateName": "ANDAMAN AND NICOBAR ISLANDS",
+      "farmersPrice": 100.0,
+      "rating": 3
+    }, {
+      "farmerID": 24,
+      "farmerName": "Haqomuqu",
+      "stateName": "ANDAMAN AND NICOBAR ISLANDS",
+      "farmersPrice": 100.0,
+      "rating": 4
+    }, {
+      "farmerID": 25,
+      "farmerName": "Sypohube",
+      "stateName": "ANDAMAN AND NICOBAR ISLANDS",
+      "farmersPrice": 100.0,
+      "rating": 3
+    }, {
+      "farmerID": 26,
+      "farmerName": "SHakaewishae",
+      "stateName": "ANDAMAN AND NICOBAR ISLANDS",
+      "farmersPrice": 100.0,
+      "rating": 4
+    }, {
+      "farmerID": 27,
+      "farmerName": "ZHywelibe",
+      "stateName": "ANDAMAN AND NICOBAR ISLANDS",
+      "farmersPrice": 100.0,
+      "rating": 3
+    }, {
+      "farmerID": 28,
+      "farmerName": "Fofyridu",
+      "stateName": "ANDAMAN AND NICOBAR ISLANDS",
+      "farmersPrice": 100.0,
+      "rating": 3
+    }, {
+      "farmerID": 29,
+      "farmerName": "Bivywama",
+      "stateName": "ANDAMAN AND NICOBAR ISLANDS",
+      "farmersPrice": 100.0,
+      "rating": 3
+    }, {
+      "farmerID": 30,
+      "farmerName": "Gaexucino",
+      "stateName": "ANDAMAN AND NICOBAR ISLANDS",
+      "farmersPrice": 100.0,
+      "rating": 3
+    }, {
+      "farmerID": 31,
+      "farmerName": "Wycoraega",
+      "stateName": "ANDAMAN AND NICOBAR ISLANDS",
+      "farmersPrice": 100.0,
+      "rating": 4
+    }, {
+      "farmerID": 32,
+      "farmerName": "Legugatu",
+      "stateName": "ANDAMAN AND NICOBAR ISLANDS",
+      "farmersPrice": 100.0,
+      "rating": 3
+    }, {
+      "farmerID": 33,
+      "farmerName": "Riwijygo",
+      "stateName": "ANDAMAN AND NICOBAR ISLANDS",
+      "farmersPrice": 100.0,
+      "rating": 3
+    }, {
+      "farmerID": 34,
+      "farmerName": "Lanelaeny",
+      "stateName": "ANDAMAN AND NICOBAR ISLANDS",
+      "farmersPrice": 100.0,
+      "rating": 3
+    }, {
+      "farmerID": 35,
+      "farmerName": "Futexony",
+      "stateName": "ANDAMAN AND NICOBAR ISLANDS",
+      "farmersPrice": 100.0,
+      "rating": 3
+    }, {
+      "farmerID": 36,
+      "farmerName": "Kogylopa",
+      "stateName": "ANDAMAN AND NICOBAR ISLANDS",
+      "farmersPrice": 100.0,
+      "rating": 3
+    }, {
+      "farmerID": 37,
+      "farmerName": "Xokyxegy",
+      "stateName": "ANDAMAN AND NICOBAR ISLANDS",
+      "farmersPrice": 100.0,
+      "rating": 3
+    }, {
+      "farmerID": 38,
+      "farmerName": "Savisyla",
+      "stateName": "ANDAMAN AND NICOBAR ISLANDS",
+      "farmersPrice": 100.0,
+      "rating": 3
+    }, {
+      "farmerID": 39,
+      "farmerName": "Cyvorydae",
+      "stateName": "ANDAMAN AND NICOBAR ISLANDS",
+      "farmersPrice": 100.0,
+      "rating": 3
+    }, {
+      "farmerID": 40,
+      "farmerName": "Xazhaemyxy",
+      "stateName": "ANDAMAN AND NICOBAR ISLANDS",
+      "farmersPrice": 100.0,
+      "rating": 3
+    }, {
+      "farmerID": 41,
+      "farmerName": "Piqypugi",
+      "stateName": "ANDAMAN AND NICOBAR ISLANDS",
+      "farmersPrice": 100.0,
+      "rating": 4
+    }, {
+      "farmerID": 42,
+      "farmerName": "SHyvekaebe",
+      "stateName": "ANDAMAN AND NICOBAR ISLANDS",
+      "farmersPrice": 100.0,
+      "rating": 4
+    }, {
+      "farmerID": 43,
+      "farmerName": "Jaewaluga",
+      "stateName": "ANDAMAN AND NICOBAR ISLANDS",
+      "farmersPrice": 100.0,
+      "rating": 3
+    }, {
+      "farmerID": 44,
+      "farmerName": "Dobocalu",
+      "stateName": "ANDAMAN AND NICOBAR ISLANDS",
+      "farmersPrice": 100.0,
+      "rating": 4
+    }, {
+      "farmerID": 45,
+      "farmerName": "Hacapiji",
+      "stateName": "ANDAMAN AND NICOBAR ISLANDS",
+      "farmersPrice": 100.0,
+      "rating": 3
+    }, {
+      "farmerID": 46,
+      "farmerName": "Juvuwale",
+      "stateName": "ANDAMAN AND NICOBAR ISLANDS",
+      "farmersPrice": 100.0,
+      "rating": 4
+    }, {
+      "farmerID": 47,
+      "farmerName": "Gylymupi",
+      "stateName": "ANDAMAN AND NICOBAR ISLANDS",
+      "farmersPrice": 100.0,
+      "rating": 4
+    }, {
+      "farmerID": 48,
+      "farmerName": "Lydepyvi",
+      "stateName": "ANDAMAN AND NICOBAR ISLANDS",
+      "farmersPrice": 100.0,
+      "rating": 3
+    }, {
+      "farmerID": 49,
+      "farmerName": "Daetidisae",
+      "stateName": "ANDAMAN AND NICOBAR ISLANDS",
+      "farmersPrice": 100.0,
+      "rating": 3
+    }, {
+      "farmerID": 50,
+      "farmerName": "Gemidepo",
+      "stateName": "ANDAMAN AND NICOBAR ISLANDS",
+      "farmersPrice": 100.0,
+      "rating": 3
+    }
+]
+
+}

@@ -17,7 +17,7 @@ export class SplashService {
         return this.commonService.getObjects('/Products')
     };
     getLocations(){
-        return this.commonService.getObjects('/states')
+        return this.commonService.getObjects('/States')
     }
 
 

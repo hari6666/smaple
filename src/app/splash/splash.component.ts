@@ -4,6 +4,10 @@ import { Subscription, Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
 import { Router } from '@angular/router';
 import { EmitterService } from '../Shared/EmitterService/emiiterService';
+import { FormGroup, FormBuilder } from '@angular/forms';
+//import  *  as  data  from  '../Shared/Config/config.json';
+
+var data = require('../Shared/Config/config.json');
 
 
 
@@ -14,15 +18,29 @@ import { EmitterService } from '../Shared/EmitterService/emiiterService';
 })
 export class SplashComponent implements OnInit, OnDestroy {
 
-  constructor(private splashService: SplashService, private router: Router, private emitterService: EmitterService) { }
-  private unsubscribe: Subject<void> = new Subject();
+  constructor(private splashService: SplashService, private router: Router, private emitterService: EmitterService, private _fb: FormBuilder) { }
+  private unsubscribe: Subject<void> = new Subject()
 
   productsData: any;
-  statesData: any
+  statesData: any;
+  productForm: FormGroup;
+  productId: any;
+  stateId: any;
 
   ngOnInit(): void {
-    this.getProducts();
-    this.getLocations();
+    this.productsData=data.products;
+    this.statesData=data.states;
+    // this.getProducts();
+    // this.getLocations();
+    this.setFormControls()
+  };
+
+
+  setFormControls() {
+    this.productForm = this._fb.group({
+      product: [''],
+      state: ['']
+    })
   }
 
 
@@ -33,14 +51,22 @@ export class SplashComponent implements OnInit, OnDestroy {
   };
 
   getLocations() {
-    this.splashService.getLocations().subscribe((data: any) => {
+    this.splashService.getLocations().pipe(takeUntil(this.unsubscribe)).subscribe((data: any) => {
       this.statesData = data;
     })
   };
 
+  productList(e) {
+    this.productId = this.productForm.get('product').value;
+    this.stateId = this.productForm.get('state').value;
+  }
+  stateList(e) {
+
+  }
+
   search() {
     this.emitterService.headerShow.emit(true);
-    this.router.navigate(['/listing'])
+    this.router.navigate(['/listing'], { queryParams: { 'productId': this.productId,'stateId':this.stateId } });
   }
 
 

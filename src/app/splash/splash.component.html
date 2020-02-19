@@ -2,17 +2,17 @@
 <div class="container">
     <div class="StartPage">
         <h1>Find Your Needs</h1>
-        <form >
+        <form  [formGroup]="productForm">
             <div class="form-group">
                 <label for="sel1">Product</label>
-                <select class="form-control" id="sel1" name="sellist1">
+                <select class="form-control" id="sel1" name="sellist1" formControlName="product" (change)="productList($event)">
                     <option value="" disabled selected hidden>Select the product</option>
-                    <option *ngFor="let product of productsData; let i = index">{{product.productName}}</option>
+                    <option *ngFor="let product of productsData; let i = index" [ngValue]="product.productId" >{{product.productName}}</option>
                 </select>
                 <label for="sel1">Location</label>
-                <select class="form-control" id="sel2" name="sellist1">
+                <select class="form-control" id="sel2" name="sellist1" formControlName="state" (change)="productList($event)">
                     <option value="" disabled selected hidden>Select the location</option>
-                    <option *ngFor="let states of statesData; let i = index">{{states.stateName}}</option>
+                    <option *ngFor="let states of statesData; let i = index"  [ngValue]="states.stateId">{{states.stateName}}</option>
                 </select>
                 <button type="submit" class="btn btn-primary select" (click)="search()">Search</button>
             </div>

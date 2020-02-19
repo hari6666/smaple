@@ -1,142 +1,23 @@
-
 <div class="container listing">
-    <h3>Searched Results</h3>
-<div class="row">
-    <div class="col-sm-3">
-        <div class="card effect6" [routerLink]="['/details']">
-            <div class="card-body">
-                <h5 class="card-title">Farmer Name</h5>
-                <p class="card-text">Place</p>
-                <label>Rating : </label>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
-                <p>Wheet : <span>20 Kg</span></p>
-                
-                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-            </div>
+  <h3>Searched Results</h3>
+  <div class="row">
+    <div class="col-sm-3" *ngFor="let list of faramerList">
+      <div class="card effect6" [routerLink]="['/details']">
+        <div class="card-body">
+          <h5 class="card-title">{{list.farmerName}}</h5>
+          <p class="card-text">{{list.stateName}}</p>
+          <p class="card-text">Farmer Price: {{list.farmersPrice}}</p>
+          <label>Rating : </label>
+          <span class="fa fa-star " [ngClass]="{'checked': list.rating-1>=0}"> </span>
+          <span class="fa fa-star " [ngClass]="{'checked': list.rating-2>=0}"></span>
+          <span class="fa fa-star " [ngClass]="{'checked': list.rating-3>=0}"></span>
+          <span class="fa fa-star " [ngClass]="{'checked': list.rating-4>=0}"></span>
+          <span class="fa fa-star" [ngClass]="{'checked': list.rating-5>=0}"></span>
+          <p>Wheat : <span>20 Kg</span></p>
+
+          <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
         </div>
+      </div>
     </div>
-    <div class="col-sm-3">
-        <div class="card effect6">
-            <div class="card-body">
-                <h5 class="card-title">Farmer Name</h5>
-                <p class="card-text">Place</p>
-                <label>Rating : </label>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
-                <p>Wheet : <span>20 Kg</span></p>
-                
-                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-            </div>
-        </div>
-    </div>
-    <div class="col-sm-3">
-            <div class="card effect6">
-            <div class="card-body">
-                <h5 class="card-title">Farmer Name</h5>
-                <p class="card-text">Place</p>
-                <label>Rating : </label>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
-                <p>Wheet : <span>20 Kg</span></p>
-                
-                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-            </div>
-        </div>
-    </div>
-    <div class="col-sm-3">
-            <div class="card effect6">
-            <div class="card-body">
-                <h5 class="card-title">Farmer Name</h5>
-                <p class="card-text">Place</p>
-                <label>Rating : </label>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
-                <p>Wheet : <span>20 Kg</span></p>
-                
-                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-            </div>
-        </div>
-    </div>
-    <div class="col-sm-3">
-        <div class="card effect6">
-            <div class="card-body">
-                <h5 class="card-title">Farmer Name</h5>
-                <p class="card-text">Place</p>
-                <label>Rating : </label>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
-                <p>Wheet : <span>20 Kg</span></p>
-                
-                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-            </div>
-        </div>
-    </div>
-    <div class="col-sm-3">
-        <div class="card effect6">
-            <div class="card-body">
-                <h5 class="card-title">Farmer Name</h5>
-                <p class="card-text">Place</p>
-                <label>Rating : </label>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
-                <p>Wheet : <span>20 Kg</span></p>
-                
-                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-            </div>
-        </div>
-    </div>
-    <div class="col-sm-3">
-        <div class="card effect6">
-            <div class="card-body">
-                <h5 class="card-title">Farmer Name</h5>
-                <p class="card-text">Place</p>
-                <label>Rating : </label>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
-                <p>Wheet : <span>20 Kg</span></p>
-                
-                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-            </div>
-        </div>
-    </div>
-    <div class="col-sm-3">
-        <div class="card effect6">
-            <div class="card-body">
-                <h5 class="card-title">Farmer Name</h5>
-                <p class="card-text">Place</p>
-                <label>Rating : </label>&nbsp;&nbsp;
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
-                <p>Wheet : <span>20 Kg</span></p>
-                
-                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-            </div>
-        </div>
-    </div>
-</div>
+  </div>
 </div>

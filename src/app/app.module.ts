@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from  '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 
 import { AppComponent } from './app.component';
 
@@ -11,6 +13,7 @@ import { KishanListingComponent } from './kishan-listing/kishan-listing.componen
 import { DetailsPageComponent } from './details-page/details-page.component';
 import { HeaderComponent } from './Shared/Components/header/header.component'
 import { FooterComponent } from './shared/Components/footer/footer.component';
+import { ModalComponent } from './modal/modal.component';
 
 
 @NgModule({
@@ -21,11 +24,14 @@ import { FooterComponent } from './shared/Components/footer/footer.component';
     DetailsPageComponent,
     HeaderComponent,
     FooterComponent,
+    ModalComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
